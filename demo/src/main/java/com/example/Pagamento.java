@@ -41,7 +41,8 @@ public class Pagamento {
     public void setValorPago(int valorPago) {
         this.valorPago = valorPago;
     }
-    public static Pagamento processaPagamento (Fatura f, Boleto[] b) {
+
+    public static Pagamento processaPagamento (Boleto[] b) {
 
         return null;
         
