@@ -10,9 +10,10 @@ public class ProcessaBoletoTest {
      */
 
     @Test
-    public void criaPagametoTest(){
-        Assert.assertTrue(ProcessaBoleto.criaPagamento());
-
+    public void criaPagametoRetornaPagamento(){
+        final Pagamento expected = p;
+        final Pagamento actual = ProcessaBoleto.criaPagamento(500, "13/04/22", "Boleto");
+        Assert.assertEquals(expected, actual);
     }
 
     

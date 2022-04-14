@@ -24,6 +24,13 @@ public class ProcessaBoleto {
         this.fatura = fatura;
     }
 
+    public static Pagamento criaPagamento(int i, String string, String string2) {
+        Pagamento p = new Pagamento(500, "13/04/22", "Boleto");
+
+        return  true;
+        
+    }
+
     
 
 
