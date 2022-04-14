@@ -23,13 +23,14 @@ public class ProcessaBoleto {
     public void setFatura(Fatura fatura) {
         this.fatura = fatura;
     }
+    public static Pagamento processaPagamento (Fatura f, Boleto[] b) {
 
-    public static Pagamento criaPagamento(int i, String string, String string2) {
-        Pagamento p = new Pagamento(500, "13/04/22", "Boleto");
-
-        return  true;
+        return null;
         
     }
+
+    
+
 
     
 

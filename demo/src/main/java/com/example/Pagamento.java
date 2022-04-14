@@ -1,6 +1,5 @@
 package com.example;
 
-import java.sql.Date;
 
 public class Pagamento {
     private int valorPago;
@@ -41,6 +40,11 @@ public class Pagamento {
 
     public void setValorPago(int valorPago) {
         this.valorPago = valorPago;
+    }
+    public static Pagamento processaPagamento (Fatura f, Boleto[] b) {
+
+        return null;
+        
     }
     
 }
