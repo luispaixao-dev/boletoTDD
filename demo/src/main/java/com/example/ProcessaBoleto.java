@@ -23,9 +23,13 @@ public class ProcessaBoleto {
     public void setFatura(Fatura fatura) {
         this.fatura = fatura;
     }
-    public static Pagamento processaPagamento (Fatura f, Boleto[] b) {
 
-        return null;
+    public static Pagamento processaPagamento ( Boleto b) {
+              
+        
+
+
+        return p;
         
     }
 
