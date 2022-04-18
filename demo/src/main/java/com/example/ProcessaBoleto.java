@@ -1,5 +1,6 @@
 package com.example;
 
+
 public class ProcessaBoleto {
     private Fatura fatura;
     private Boleto[] boletos;
@@ -25,8 +26,12 @@ public class ProcessaBoleto {
     }
 
     public static Pagamento processaPagamento ( Boleto b) {
-        Pagamento p = new Pagamento(15, "12/12", "boleto");    
+        Pagamento p = new Pagamento(15, "12/12", "boleto");
         return p;
+        
+    }
+    public static String pagarFatura(Fatura fatura, Boleto[] boletos) {
+        return "não pago";
         
     }
 
