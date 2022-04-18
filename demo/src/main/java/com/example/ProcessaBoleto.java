@@ -31,7 +31,7 @@ public class ProcessaBoleto {
         
     }
     public static String pagarFatura(Fatura fatura, Boleto[] boletos) {
-        return "não pago";
+        return "pago";
         
     }
 
