@@ -30,16 +30,21 @@ public class ProcessaBoleto {
         return p;
         
     }
-    public static String pagarFatura(Fatura fatura, Boleto[] boletos) {
-        return "pago";
-        
-    }
+    public static String pagarFatura (Fatura fatura, Boleto[] boletos) {
+        float ValorFatura = fatura.getValorTotal();
+        Pagamento[] boletosAPagar= new Pagamento[boletos.length];
+        float valor_pagamento = 0; 
 
-    
-
-
-    
-
-
-    
+        for(int i= 0; i < boletos.length; i++ ){
+            boletosAPagar[i] = processaPagamento(boletos[i]);
+            valor_pagamento += boletosAPagar[i].getValorPago();
+        }
+        if (valor_pagamento >= ValorFatura) {
+            return "pago";
+            
+        } else {
+            return "saldo insuficiente";
+        }
+           
+}
 }

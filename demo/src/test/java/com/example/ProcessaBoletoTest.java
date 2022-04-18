@@ -39,7 +39,6 @@ public class ProcessaBoletoTest {
     public void pagarFaturaTest() {
         final  String expected = "pago";
         Assert.assertEquals(expected, ProcessaBoleto.pagarFatura(abril, arrayBoleto));
-        System.out.println(arrayBoleto[0]);
         
     }
     
