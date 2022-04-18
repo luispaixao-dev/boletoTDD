@@ -1,19 +1,18 @@
 package com.example;
 
-import java.util.Date;
 
 public class Fatura  {
-    private Date Data;
+    private String Data;
     private float valorTotal;
     private String Cliente;
 
-    public Fatura(Date data, float valorTotal, String cliente) {
+    public Fatura(String data, float valorTotal, String cliente) {
         Data = data;
         this.valorTotal = valorTotal;
         Cliente = cliente;
     }
 
-    public Date getData() {
+    public String getData() {
         return Data;
     }
     public String getCliente() {
@@ -28,7 +27,7 @@ public class Fatura  {
     public void setValorTotal(float valorTotal) {
         this.valorTotal = valorTotal;
     }
-    public void setData(Date data) {
+    public void setData(String data) {
         this.Data = data;
     }
     

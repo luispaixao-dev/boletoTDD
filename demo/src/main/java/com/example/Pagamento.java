@@ -2,12 +2,12 @@ package com.example;
 
 
 public class Pagamento {
-    private int valorPago;
+    private float valorPago;
     private String Data;
     private String tipo;
 
 
-    public Pagamento(int valorPago, String data, String tipo) {
+    public Pagamento(float valorPago, String data, String tipo) {
         this.setValorPago(valorPago);
         this. setData (data);
         this.setTipo(tipo);
@@ -33,19 +33,14 @@ public class Pagamento {
     }
 
 
-    public int getValorPago() {
+    public float getValorPago() {
         return valorPago;
     }
 
 
-    public void setValorPago(int valorPago) {
-        this.valorPago = valorPago;
+    public void setValorPago(float valorPago2) {
+        this.valorPago = valorPago2;
     }
 
-    public static Pagamento processaPagamento (Boleto[] b) {
-
-        return null;
-        
-    }
     
 }

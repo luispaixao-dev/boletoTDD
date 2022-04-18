@@ -1,14 +1,13 @@
 package com.example;
 
-import java.util.Date;
 
 public class Boleto {
 
     private int codigo;
-    private Date data;
+    private String data;
     private float valor;
 
-    public Boleto(int codigo, Date data, float valor) {
+    public Boleto(int codigo, String data, float valor) {
         this.codigo = codigo;
         this.data = data;
         this.valor = valor;
@@ -22,10 +21,10 @@ public class Boleto {
     public void setValor(float valor) {
         this.valor = valor;
     }
-    public Date getData() {
+    public String getData() {
         return data;
     }
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
     public void setCodigo(int codigo) {

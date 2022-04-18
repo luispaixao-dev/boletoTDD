@@ -26,7 +26,7 @@ public class ProcessaBoleto {
     }
 
     public static Pagamento processaPagamento ( Boleto b) {
-        Pagamento p = new Pagamento(15, "12/12", "boleto");
+        Pagamento p = new Pagamento( b.getValor(), b.getData(), "boleto");
         return p;
         
     }
@@ -37,9 +37,10 @@ public class ProcessaBoleto {
 
         for(int i= 0; i < boletos.length; i++ ){
             boletosAPagar[i] = processaPagamento(boletos[i]);
-            valor_pagamento += boletosAPagar[i].getValorPago();
+            valor_pagamento = valor_pagamento + boletosAPagar[i].getValorPago();
+            System.out.println(valor_pagamento);
         }
-        if (valor_pagamento >= ValorFatura) {
+        if (valor_pagamento <= ValorFatura) {
             return "pago";
             
         } else {
