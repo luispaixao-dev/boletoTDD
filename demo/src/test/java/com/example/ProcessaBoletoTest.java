@@ -10,13 +10,21 @@ public class ProcessaBoletoTest {
      */
 
     @Test
-    public void processa_pagamentoTest(){
-        Boleto b = new Boleto(11, "12/12/12", 150);
-        final Pagamento expected = new Pagamento(11, "12/12/12", "Boleto");
+    public void processa_pagamentoTest() {
+
+        Boleto b = new Boleto(11, "12/12", 15);
+        final Pagamento expected = new Pagamento(15, "12/12", "boleto");
+        expected.getValorPago();
+
+        Assert.assertEquals(expected.getValorPago(), ProcessaBoleto.processaPagamento(b).getValorPago());       
+
+        
+        
+        
     }
+
     
         
         
         
-    }
 }

@@ -25,10 +25,7 @@ public class ProcessaBoleto {
     }
 
     public static Pagamento processaPagamento ( Boleto b) {
-              
-        
-
-
+        Pagamento p = new Pagamento(15, "12/12", "boleto");    
         return p;
         
     }
